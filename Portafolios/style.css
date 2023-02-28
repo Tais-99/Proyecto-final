@@ -1,0 +1,768 @@
+
+
+html{
+    
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    margin-top: -300px;
+    background: rgb(255,85,0);
+    background: linear-gradient(144deg, rgba(255,85,0,1) 0%, rgba(199,150,97,1) 42%, rgba(60,59,57,1) 78%);    padding: 0;
+    margin: 0;
+    border: 0;
+}
+p{
+    color: #c9c9c9;
+}
+h3{
+    color: #c9c9c9;
+}
+.rer{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #111 ;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.ret{
+    position: relative;
+    top: -50%;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: 64px;
+    transform: rotate(-30deg);
+}
+i{
+    color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    padding: 0 5px;
+    user-select: none;
+    cursor: default;
+}
+i:hover{
+    transition: 0s;
+    color: #ff5500;
+    text-shadow: 0 0 120px #ff5500;
+}
+
+
+.ret div{
+
+    animation: animate1 80s linear infinite;
+    animation-delay: -80s;
+}
+.ret div:nth-child(2)
+{
+    animation: animate2 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes animate1
+{
+
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
+@keyframes animate2
+{
+
+    0%
+    {
+        transform: translateX(0%);
+    }
+    100%
+    {
+        transform: translateX(-200%);
+    }
+}
+.ret:nth-child(even) div{
+
+    animation: animate3 80s linear infinite;
+    animation-delay: -80s;
+}
+.ret:nth-child(even) div:nth-child(2)
+{
+    animation: animate4 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes animate3
+{
+
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+@keyframes animate4
+{
+
+    0%
+    {
+        transform: translateX(-200%);
+    }
+    100%
+    {
+        transform: translateX(0%);
+    }
+}
+.row-{
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #111;
+}
+.row{
+ 
+    color: #ff5500;
+}
+
+.Datospersonales{
+    display: flex;
+    justify-content: center;
+    padding-top: 150 ;
+    font-size: 40px;
+
+
+    opacity: 0;
+    transform: scale(0.9);
+    transition: 1s ease-in-out all;
+    
+}
+
+.Datospersonales.visible{
+    opacity: 1;
+    transform: scale(1);
+}
+.pic{
+    padding-top: 30px;
+    margin: 15px;
+    height: 230;
+    border-radius: 15%;
+}
+.Foto{
+    z-index: 70;
+    position: absolute;
+    
+    
+}
+.Descripcion{
+    background: #ffffff23;
+    backdrop-filter: blur(10px);
+    height: 300;
+    width: 800;
+    padding-left: 255px;
+    margin-bottom: 250px;
+    z-index: 50;
+}
+.conocimentos{
+    margin-top: 50px;
+    background: rgb(252,126,63);
+    background: linear-gradient(335deg, rgba(252,126,63,1) 36%, rgba(199,150,97,1) 49%, rgba(129,104,67,1) 76%);    border-radius: 5%;
+    height: 300;
+    width: 100;
+    margin: auto; 
+    margin-bottom: 300px;
+
+
+    opacity: 0;
+    transform: scale(0.9) ;
+    transition: 1s ease-in-out all;
+    
+}
+
+.conocimentos2{
+    background: #ffffff23;
+    backdrop-filter: blur(10px) ;
+    margin-bottom: 200px;
+}
+
+.conocimentos.visible{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.conocimentos-{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    font-size:xx-large ;
+    display: flex;
+    justify-content: center;
+}
+.boot{
+    height: 120px;
+    width: auto;
+    padding: 15;
+    transition-duration: 0.5s;
+}
+.boot:hover{
+    
+    height: 130px;
+    width: auto;
+    padding: 15;
+}
+.ht{
+    height: 120px;
+    width: auto;
+    padding: 15;
+    transition-duration: 0.5s
+}
+.ht:hover{
+    height: 130px;
+    width: auto;
+    padding: 15;
+}
+.ps{
+    padding: 15;
+    height: 120px;
+    width: auto;
+    transition-duration: 0.5s
+}
+.ps:hover{
+    padding: 15;
+    height: 130px;
+    width: auto;
+}
+.js{
+    padding: 15;
+    height: 120px;
+    width: auto;
+    transition-duration: 0.5s
+}
+.js:hover{
+    padding: 15;
+    height: 130px;
+    width: auto;
+}
+.ai{
+    padding: 15;
+    height: 120px;
+    width: auto;
+    transition-duration: 0.5s
+}
+.ai:hover{
+    padding: 15;
+    height: 130px;
+    width: auto;
+}
+.css{
+    padding: 15;
+    height: 120px;
+    width: auto;
+    transition-duration: 0.5s
+}
+.css:hover{
+    padding: 15;
+    height: 130px;
+    width: auto;
+}
+.contacto{
+    
+    background: rgb(252,126,63);
+    background: linear-gradient(335deg, rgba(252,126,63,1) 36%, rgba(199,150,97,1) 49%, rgba(129,104,67,1) 76%);    border-radius: 5%;
+    height: 300;
+    width: 1070;
+    margin: auto; 
+    margin-bottom: 50px;
+
+    opacity: 0;
+    transform: scale(0.9);
+    transition: 1s ease-in-out all;
+    
+}
+.Contacto2{
+    background: #ffffff23;
+    backdrop-filter: blur(10px);
+    height: 300;
+    width: 1070;
+
+
+
+}
+
+.contacto.visible{
+    opacity: 1;
+    transform: scale(1) translateX(0);
+}
+
+.contacto-{
+    display: flex;
+    justify-content: center;
+}
+.wpp{
+    padding-right: 50 ;
+    height: 120px;
+    width: auto;
+    transition-duration: 0.5s
+}
+.wpp:hover{
+    padding-right: 50 ;
+    height: 140px;
+    width: auto;
+}
+.tw{
+    padding-right: 50 ;
+    height: 120px;
+    width: auto;
+    transition-duration: 0.5s
+}
+.tw:hover{
+    padding-right: 50 ;
+    height: 150px;
+    width: auto;
+}
+.ig{
+    padding-right: 50 ;
+    height: 120px;
+    width: auto;
+    transition-duration: 0.5s
+}
+.ig:hover{
+    padding-right: 50 ;
+    height: 140px;
+    width: auto;
+}
+.gm{
+    height: 120px;
+    width: auto;
+    transition-duration: 0.5s
+}
+.gm:hover{
+    padding-right: 50 ;
+    height: 140px;
+    width: auto;
+}
+
+header {
+    background: #000000;
+    width: 100%;
+    clear: both;
+    top: 0;
+    left: 0;
+    align-items: center;
+    content:'';
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    transition: 0.6s;
+    z-index: 9999;
+  }
+
+  
+  .menu {
+    border: 0;
+    padding: 0;
+    width: 900px;
+    margin: 0 auto;
+    transition: 0.6s;
+  }
+nav {
+    float: right;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ff5500;
+    font-weight: bold;
+  }
+  
+  nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #ff5500;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+  }
+  
+  nav ul li a:hover::before {
+    width: 100%;
+  }
+
+
+
+
+@media screen and (max-width: 1170px){
+
+
+    .Datospersonales{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+    
+    
+        opacity: 0;
+        transform: scale(0.5);
+        transition: 1s ease-in-out all;
+        
+    }
+    
+    .Datospersonales.visible{
+        opacity: 1;
+        transform: scale(0.7);
+    }
+
+
+    .conocimentos{
+        margin-top: 250px;
+        background: rgb(252,126,63);
+        background: linear-gradient(335deg, rgba(252,126,63,1) 36%, rgba(199,150,97,1) 49%, rgba(129,104,67,1) 76%);    border-radius: 5%;
+        height: 300;
+        width: 1070;
+        margin: auto; 
+        margin-bottom: 50px;
+    
+    
+        opacity: 0;
+        transform: scale(0.5) ;
+        transition: 1s ease-in-out all;
+        
+    }
+    
+    .conocimentos.visible{
+         
+        opacity: 1;
+        transform: scale(0.7);
+    }
+
+
+
+    .contacto{
+    
+        background: rgb(252,126,63);
+        background: linear-gradient(335deg, rgba(252,126,63,1) 36%, rgba(199,150,97,1) 49%, rgba(129,104,67,1) 76%);    border-radius: 5%;
+        height: 300;
+        width: 1070;
+        margin: auto; 
+        margin-bottom: 50px;
+    
+        opacity: 0;
+        transform: scale(0.5);
+        transition: 1s ease-in-out all;
+        
+    }
+    
+    .contacto.visible{
+        opacity: 1;
+        transform: scale(0.7) translateX(0);
+    }
+    
+   
+    header{
+    width: 100%;
+    height: 100%;
+   }
+   
+    header.sticky{
+        position: fixed;
+        width: 100%;
+        height: 50px;
+    }
+
+    header.sticky .menu{
+        font-size: 20px;
+    }
+
+    header.sticky nav ul li {
+        list-style: none;
+        margin-left: 75px;
+        padding: 12px 0;
+        float: left;
+        padding-bottom: -400
+        ;
+        transition: .5s;
+      }
+
+   .menu{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 40px;
+   }
+   nav ul li {
+    margin: 5rem;
+
+    list-style: none;
+    margin-left: 75px;
+    padding: 0px 0;
+    position: relative;
+    float: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ff5500;
+    font-weight: bold;
+  }
+  
+  nav ul li a::before {
+    content: '';
+    width: 0%;
+    background: #ff5500;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+  }
+  
+  nav ul li a:hover::before {
+    width: 100%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 920px){
+    .ret{
+        position: relative;
+        top: -50%;
+        width: 100%;
+        display: flex;
+        padding: 0px 0;
+        white-space: nowrap;
+        font-size: 30px;
+        transform: rotate(-30deg);
+    }
+    .rer{
+        font-size: 10px;
+    }
+
+    .Datospersonales{
+        display: flex;
+        justify-content: center;
+        
+        font-size: 40px;
+    
+    
+        opacity: 0;
+        transform: scale(0.3);
+        transition: 1s ease-in-out all;
+        
+    }
+    
+    .Datospersonales.visible{
+        opacity: 1;
+        transform: scale(0.5);
+    }
+
+
+    .conocimentos{
+        
+        margin-top: 250px;
+        background: rgb(252,126,63);
+        background: linear-gradient(335deg, rgba(252,126,63,1) 36%, rgba(199,150,97,1) 49%, rgba(129,104,67,1) 76%);    border-radius: 5%;
+        /* height: 300;
+        width: 1070; */
+        margin: auto; 
+        margin-bottom: 400px;
+    
+    
+        opacity: 0;
+        transform: scale(0.3) ;
+        transition: 1s ease-in-out all;
+        
+    }
+    
+    .conocimentos.visible{
+        opacity: 1;
+        transform: scale(0.5);
+    }
+
+
+
+    .contacto{
+    
+        background: rgb(252,126,63);
+        background: linear-gradient(335deg, rgba(252,126,63,1) 36%, rgba(199,150,97,1) 49%, rgba(129,104,67,1) 76%);    border-radius: 5%;
+        height: 300;
+        width: 1070;
+        margin: auto; 
+        margin-bottom: 50px;
+    
+        opacity: 0;
+        transform: scale(0.3);
+        transition: 1s ease-in-out all;
+        
+    }
+    
+    .contacto.visible{
+        opacity: 1;
+        transform: scale(0.5) translateX(0);
+    }
+   
+    header{
+    width: 100%;
+    height: 100%;
+   }
+   
+    header.sticky{
+        position: fixed;
+        width: 100%;
+        height: 50px;
+    }
+
+    header.sticky .menu{
+        font-size: 20px;
+    }
+    i{
+        padding: 20;
+        color: #ff5500;
+        position: absolute;
+    }
+
+    header.sticky nav ul li {
+        list-style: none;
+        margin-left: 10px;
+        padding: 12px 0;
+        float: left;
+        padding-bottom: -400
+        ;
+        transition: .5s;
+      }
+
+   .menu{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 40px;
+   }
+   nav ul li {
+    margin: 5rem;
+
+    list-style: none;
+    margin-left: 75px;
+    padding: 0px 0;
+    position: relative;
+    float: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ff5500;
+    font-weight: bold;
+  }
+  
+  nav ul li a::before {
+    content: '';
+    width: 0%;
+    background: #ff5500;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+  }
+  
+  nav ul li a:hover::before {
+    width: 100%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 720px){
+   
+    header{
+    width: 100%;
+    height: 100%;
+   }
+   
+    header.sticky{
+        position: fixed;
+        width: 100%;
+        height: 50px;
+    }
+
+    header.sticky .menu{
+        font-size: 20px;
+    }
+    i{
+        padding: 20;
+        color: #ff5500;
+        position: absolute;
+    }
+
+    header.sticky nav ul li {
+        list-style: none;
+        margin-left: 5px;
+        padding: 0 0;
+        float: left;
+        padding-bottom: -400
+        ;
+        transition: .5s;
+      }
+
+   .menu{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 10px;
+   }
+   nav ul li {
+    margin: 5rem;
+
+    list-style: none;
+    margin-left: 75px;
+    padding: 0px 0;
+    position: relative;
+    float: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ff5500;
+    font-weight: bold;
+  }
+  
+  nav ul li a::before {
+    content: '';
+    width: 0%;
+    background: #ff5500;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+  }
+  
+  nav ul li a:hover::before {
+    width: 100%;
+  }
+
+
+}
